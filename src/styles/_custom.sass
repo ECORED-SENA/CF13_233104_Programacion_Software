@@ -2,13 +2,59 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    width: 150px
+    bottom: 10%
+    right: 10%
+    z-index: 1
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    width: 150px
+    top: 20%
+    right: 10%
+    z-index: 2
+  &-3
+    animation: float2 2.8s ease-in-out infinite alternate
+    position: absolute
+    width: 250px
+    top: 10%
+    right: 5%
+  &-4
+    animation: scale1 2.8s ease-in-out infinite alternate
+    position: absolute
+    width: 70px
+    top: 10%
+    right: 0%
+  &-5
+    animation: float1 2.8s ease-in-out infinite alternate
+    position: absolute
+    width: 45px
+    top: 10%
+    left: 0%
+
+@media (max-width: 1400px)
+  .banner-principal-decorativo
+    &-1    
+      width: 90px
+      bottom: 10%
+      right: 10%    
+    &-2     
+      width: 90px
+      top: 20%
+      right: 10%
+      z-index: 2
+    &-3      
+      width: 180px
+      top: 10%
+      right: 10%
+    &-4      
+      width: 50px
+      top: 10%
+      right: 0%
+    &-5      
+      width: 45px
+      top: 10%
+      left: 0%
 
 
 @keyframes float1
@@ -17,3 +63,313 @@
 
   100%
     transform: translateY(0px)
+
+@keyframes float2
+  0%
+    transform: translateX(20px)
+
+  100%
+    transform: translateX(0px)
+
+@keyframes scale1
+  0%
+    transform: scale(0.8)
+
+  100%
+    transform: scale(1)
+
+// -----------------------------------------------------
+
+.banner-principal__img > img
+  position: relative
+  z-index: 999
+
+
+
+// img utilities // -----------------------------------------------------
+.img30
+  width: 30px
+.img85
+  width: 85px
+.img165
+  width: 165px
+.img190
+  width: 190px
+.img300
+  width: 300px
+.img350
+  max-width: 350px
+
+//  utilities // -----------------------------------------------------
+.brad_01
+  border-radius: 12px
+
+.hg_100
+  height: 100%
+
+.hr_line
+  width: 100%
+  height: 2px
+  margin: 1rem 0
+  background-color: #5573C6
+
+.top--negMargin
+  margin-top: -6rem
+  @media (max-width: 990px)
+    margin-top: 0
+
+.shadow
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+
+.brd--rad_01
+  border-radius: 9pt
+
+.brd--rad_02
+  border-radius: 20pt
+
+.cstm_h3
+  padding: 0.65rem 1.5rem
+  background-color: #F4A338
+  h3
+    margin-bottom: 0 !important
+
+// cajones // -----------------------------------------------------
+.cajon
+  padding: 1.5rem
+  p
+    margin-bottom: 0
+  &.cjn--blue
+    background-color: #DDE3F4
+    &::before
+      background-color: #5573C6
+
+  &.cjn--mint
+    background-color: #DBF8F6
+    &::before
+      background-color: #4ADBD1
+
+// cstn backgrounds -----------------------------------
+.bg--full
+  position: relative
+  & > *
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: -50px
+    width: calc( 100% + 100px )
+    height: 100%
+
+.bg--full.grad_01
+  &::before
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(232,254,252,1) 50%, rgba(255,255,255,1) 100%)
+
+.grad_02
+  background: linear-gradient(180deg, rgba(221,227,244,1) 0%, rgba(219,248,246,1) 100%)
+
+.bg--full.img_01
+  &::before
+    background-image: url("../assets/curso/recursos/bg_img_01.svg")
+    background-repeat: no-repeat    
+    background-position: top center
+    background-size: cover
+.bg--full.img_02
+  &::before
+    background-image: url("../assets/curso/recursos/bg_img_02.svg")
+    background-repeat: no-repeat    
+    background-position: top center
+    background-size: cover
+.bg--full.img_03
+  &::before
+    background-image: url("../assets/curso/recursos/bg_img_03.svg")
+    background-repeat: no-repeat    
+    background-position: top center
+    background-size: cover
+.bg--full.img_04
+  &::before
+    background-image: url("../assets/curso/recursos/bg_img_04.svg")
+    background-repeat: no-repeat    
+    background-position: top center
+    background-size: cover
+.bg--full.img_05
+  &::before
+    background-image: url("../assets/curso/recursos/bg_img_05.svg")
+    background-repeat: no-repeat    
+    background-position: top center
+    background-size: cover
+.bg--full.img_06
+  &::before
+    background-image: url("../assets/curso/recursos/bg_img_06.svg")
+    background-repeat: no-repeat    
+    background-position: top center
+    background-size: cover
+
+.bg_slider_01
+  background-image: url("../assets/curso/recursos/img_slyder_01.png")
+  background-repeat: no-repeat    
+  background-position: center center
+  background-size: cover
+
+
+//-----------------------------------
+.bg--cta
+  border-radius: 10px
+  background: linear-gradient(90deg, rgba(44,74,155,1) 0%, rgba(85,115,198,1) 100%)
+
+.bg--code
+  padding: 2rem
+  background-color: #12263F  
+  p
+    color: white
+
+  @media (max-width: 990px)
+    overflow: scroll
+    
+.bg--code_01  
+  position: relative
+  padding: 1rem 4rem
+  background-color: #304684
+  & > *
+    position: relative   
+  p 
+    color: white
+    font-weight: 700
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 20px
+    height: 100%
+    background-image: url("../assets/curso/recursos/C1_A.svg")
+    background-repeat: no-repeat
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 20px
+    height: 60px
+    background-image: url("../assets/curso/recursos/C1_B.svg")
+    background-repeat: no-repeat
+
+.bg--code_02 
+  position: relative
+  padding: 1rem 4rem
+  background-color: #5573C6
+  & > *
+    position: relative   
+  p 
+    color: white
+    font-weight: 700
+
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 20px
+    height: 100%
+    background-image: url("../assets/curso/recursos/C2_A.svg")
+    background-repeat: no-repeat
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 20px
+    height: 60px
+    background-image: url("../assets/curso/recursos/C2_B.svg")
+    background-repeat: no-repeat
+
+.c0
+  color: #9BD7FA
+.c1
+  color: #A9FFFF
+.c2
+  color: #FFDAA8
+.c3
+  color: #FF9D79
+.c4
+  color: #B0FF98
+.c5
+  color: #FDB2F8
+.c6
+  color: #68E8A4
+
+.pd--1
+  padding-left: 1rem
+.pd--2
+  padding-left: 2rem
+.pd--3
+  padding-left: 3rem
+.pd--4
+  padding-left: 4rem
+.pd--5
+  padding-left: 5rem
+.pd--6
+  padding-left: 6rem
+.pd--7
+  padding-left: 7rem
+.pd--8
+  padding-left: 8rem
+.pd--9
+  padding-left: 9rem
+
+.bg--white
+  background-color: #ffffff
+.bg--blue
+  background-color: #DDE3F4
+.bg--darkBlue
+  background-color: #5573C6
+.bg--darkBlue_02
+  background-color: #304684
+.bg--gray  
+  background-color: #e7e7e7
+.bg--mint
+  background-color: #DBF8F6
+.bg--purple
+  background-color: #DDE3F4
+
+
+// Avatar Card Horizontal -----------------------------------
+.crd--avatarH
+  position: relative
+  padding: 1.5em
+  & > *
+    position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0    
+    width: calc( 100% - 65px )
+    height: 100%
+    background-color: #DDE3F4
+    border-radius: 15px
+
+// Slider -----------------------------------
+.slyder-a__bullets__item
+  background-color: #AFAFAF
+  border: none
+.slyder-a__bullets__item--active
+  background-color: #EEAC3A
+  border: none
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  background-color: #5573C6
+  background-image: url("../assets/componentes/arrow_white.svg")
+
+@media (max-width: 990px)
+  .slyder-a__btn--sigt, .slyder-a__btn--atrs
+    width: 35px
+    height: 35px
+  .slyder-a__bullets__item
+    width: 9px
+    height: 9px
+    margin: 0 7px
+
+// Acordeones -----------------------------------
+.acordion__activo
+  background-color: #DDE3F4
