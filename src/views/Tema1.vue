@@ -47,7 +47,7 @@
                 figure
                   img(src="@/assets/curso/temas/t1/t1_03.svg", alt="alt").img165.m-auto
 
-          p(data-aos="fade-left").mb-4 Una vez creadas las carpetas y archivos como lo son controllers, models, routes, database.js e index.js, se abre la terminal del VS Code y se digita el siguiente comando para crear un proyecto Node.js, como se muestra en el ejemplo de la siguiente figura:
+          p(data-aos="fade-left").mb-4 Una vez creadas las carpetas y archivos como lo son #[em controllers, models, routes, database].js e index.js, se abre la terminal del VS Code y se digita el siguiente comando para crear un proyecto Node.js, como se muestra en el ejemplo de la siguiente figura:
 
           .row.justify-content-center.mb-5(data-aos="flip-left")
             .col-auto
@@ -62,7 +62,7 @@
           figure(data-aos="zoom-in").mb-4
             img(src="@/assets/curso/temas/t1/t1_04.svg", alt="alt")
 
-          p(data-aos="fade-left").mb-4 Una vez creado el proyecto se requiere todas las bondades del framework de Node.js, para lo cual se hace necesario Express, que va a generar una serie de componentes que ayudarán mucho al desarrollo de esta aplicación; por lo tanto, se instala Express con la siguiente línea de comandos desde el terminal del VS Code:
+          p(data-aos="fade-left").mb-4 Una vez creado el proyecto se requiere todas las bondades del #[em framework] de Node.js, para lo cual se hace necesario Express, que va a generar una serie de componentes que ayudarán mucho al desarrollo de esta aplicación; por lo tanto, se instala Express con la siguiente línea de comandos desde el terminal del VS Code:
 
           .row.justify-content-center.mb-5(data-aos="zoom-in")
             .col-auto
@@ -188,7 +188,7 @@
         .bg--mint.p-4(data-aos="zoom-in")
           .row.justify-content-center.align-item-center
             .col-lg-8 
-              p.mb-4 Con el fin de observar la transacción de mensajes por consola se tiene una herramienta útil llamada morgan, que ayuda a mirar en consola lo que el usuario está solicitando. Esta herramienta es opcional para el desarrollo de la aplicación, no obstante se deja la línea de comando para su instalación y utilización:
+              p.mb-4 Con el fin de observar la transacción de mensajes por consola se tiene una herramienta útil llamada #[em morgan], que ayuda a mirar en consola lo que el usuario está solicitando. Esta herramienta es opcional para el desarrollo de la aplicación, no obstante se deja la línea de comando para su instalación y utilización:
 
               .row.justify-content-center.mb-4
                 .col-auto
@@ -237,7 +237,7 @@
             .col-lg-5(data-aos="zoom-in")
               .titulo-sexto.color-acento-contenido.mb-4
                 h5 Figura 9.
-                span MongoDB
+                span Extensión MongoDB
 
               figure
                 img(src="@/assets/curso/temas/t1/t1_09.png", alt="alt")
@@ -353,7 +353,7 @@
           img(src="@/assets/curso/temas/t1/t1_13.png", alt="alt")
           figcaption Nota. Vista desde un navegador.
 
-    p(data-aos="fade-left") Ya visto un ejemplo del funcionamiento de las rutas es necesario comprender su comportamiento, por lo que cada solicitud debe ir asociada a una ruta, y esta a su vez a un intercambio de información o de datos, es decir, de interacción con la BD. En ese sentido, es más que necesario la construcción del modelo empleado.js con datos específicos para los empleados dentro de la carpeta models (puede descargar el contenido de estas instrucciones en el archivo empleado.js disponible en la carpeta anexos).
+    p(data-aos="fade-left") Ya visto un ejemplo del funcionamiento de las rutas es necesario comprender su comportamiento, por lo que cada solicitud debe ir asociada a una ruta, y esta a su vez a un intercambio de información o de datos, es decir, de interacción con la BD. En ese sentido, es más que necesario la construcción del modelo empleado.js con datos específicos para los empleados dentro de la carpeta #[em models] (puede descargar el contenido de estas instrucciones en el archivo empleado.js disponible en la carpeta anexos).
 
     .row.justify-content-center.mb-5            
       .col-lg-10.mb-5
@@ -388,7 +388,7 @@
     #t_1_6.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 1.6 Desarrollo de controladores para la API REST
 
-    p(data-aos="fade-left") Una de las mejores prácticas para estructurar una aplicación cuando va en crecimiento es el uso de los controladores. Estos se encargan de definir los métodos y acciones que necesitan las rutas. Por lo tanto, se crea el archivo empleado.controller.js dentro de la carpeta controllers (puede descargar el contenido de estas instrucciones en el archivo empleado.controller.js disponible en la carpeta anexos).
+    p(data-aos="fade-left") Una de las mejores prácticas para estructurar una aplicación cuando va en crecimiento es el uso de los controladores. Estos se encargan de definir los métodos y acciones que necesitan las rutas. Por lo tanto, se crea el archivo empleado.controller.js dentro de la carpeta #[em controllers] (puede descargar el contenido de estas instrucciones en el archivo empleado.controller.js disponible en la carpeta anexos).
 
     .row.justify-content-center.mb-5
       .col-lg-10
@@ -462,9 +462,9 @@
           figure
             img(src="@/assets/curso/temas/t1/t1_17.png", alt="alt")
         .col-lg-8
-          p(data-aos="fade-left") Por otra parte, en cada uno de los métodos se utilizan funciones nativas y nuevas de JavaScript. En ese sentido, es necesario recordar que antes se utilizaban las funciones de tipo #[em callback], que existían como parámetros de los métodos, después aparecieron las promesas con la función then, pero ahora existen funciones que están dedicadas a realizar de manera más eficiente el procesamiento de los datos y mejorar los tiempos de respuesta como lo son #[strong #[em async]] y #[strong #[em await]] que hacen parte de la última versión de JavaScript.
+          p(data-aos="fade-left") Por otra parte, en cada uno de los métodos se utilizan funciones nativas y nuevas de JavaScript. En ese sentido, es necesario recordar que antes se utilizaban las funciones de tipo #[em callback], que existían como parámetros de los métodos, después aparecieron las promesas con la función #[em then], pero ahora existen funciones que están dedicadas a realizar de manera más eficiente el procesamiento de los datos y mejorar los tiempos de respuesta como lo son #[strong #[em async]] y #[strong #[em await]] que hacen parte de la última versión de JavaScript.
 
-          p.mb-0 Para el método de #[strong obtener empleados] se utiliza la función async, la cual entrega en formato json todo lo que encuentre de empleados. Por eso se utiliza la función await, porque se espera que se vaya a tardar un poco en esta actividad de buscar. En ese sentido, se utiliza uno de los métodos intrínsecos del modelo Empleado que para este caso es #[em find()].
+          p.mb-0 Para el método de #[strong obtener empleados] se utiliza la función #[em async], la cual entrega en formato json todo lo que encuentre de empleados. Por eso se utiliza la función await, porque se espera que se vaya a tardar un poco en esta actividad de buscar. En ese sentido, se utiliza uno de los métodos intrínsecos del modelo Empleado que para este caso es #[em find()].
 
     .row.mb-5(data-aos="fade-left")
       .col-auto.d-none.d-lg-flex
@@ -473,7 +473,7 @@
       .col
         p.mb-0 Además, el método de crear empleado tiene una naturaleza similar al anterior, solo que en este método se crea una nueva instancia de empleado #[strong #[em new] Empleado]. De esta forma lo que seguiría es guardar ese nuevo registro con #[strong #[em save()]]. Es importante anotar que hasta el momento no se ha creado la base de datos en MongoDB, pero apenas se almacena un registro se crea la base de datos. 
 
-    p(data-aos="fade-left") Para el método de editar empleado presenta una sintaxis interesante, en primer lugar se escribe de otra forma para capturar el id del usuario que se quiere actualizar { id }, además crea una constante #[strong empleadoEdit] para pasarle los datos traídos del cliente y finalmente se utiliza await, para dar una espera en la acción de encontrar por id y actualizar a través de la función #[strong set], que se utilizará para modificar los datos en última instancia.
+    p(data-aos="fade-left") Para el método de editar empleado presenta una sintaxis interesante, en primer lugar se escribe de otra forma para capturar el id del usuario que se quiere actualizar { id }, además crea una constante #[strong empleadoEdit] para pasarle los datos traídos del cliente y finalmente se utiliza #[em await], para dar una espera en la acción de encontrar por id y actualizar a través de la función #[strong set], que se utilizará para modificar los datos en última instancia.
 
     p(data-aos="fade-left").mb-5 Para el método de editar empleado presenta una sintaxis interesante, en primer lugar se escribe de otra forma para capturar el id del usuario que se quiere actualizar { id }, además crea una constante empleadoEdit para pasarle los datos traídos del cliente y finalmente se utiliza #[em await], para dar una espera en la acción de encontrar por id y actualizar a través de la función #[em set], que se utilizará para modificar los datos en última instancia.
 
@@ -539,7 +539,7 @@
         .bg--blue.p-4
           .row.justify-content-center
             .col-xl-6.mb-4.mb-xl-0
-              p(data-aos="fade-left") En la figura anterior se pueden apreciar los datos que se envían al servidor, dado que #[em Postman] permite realizar esa emulación del cliente. Los datos que se envían están acordes al esquema definido en el modelo de empleado.js, como lo son name, position, office y salary. La respuesta en consola, que se programa como status es que el Empleado ha sido guardado. 
+              p(data-aos="fade-left") En la figura anterior se pueden apreciar los datos que se envían al servidor, dado que #[em Postman] permite realizar esa emulación del cliente. Los datos que se envían están acordes al esquema definido en el modelo de empleado.js, como lo son #[em name, position, office y salary]. La respuesta en consola, que se programa como #[em status] es que el Empleado ha sido guardado. 
 
               .cajon.cjn--mint.mb-4(data-aos="fade-left")
                 p.mb-4 En este orden de ideas, es necesario revisar la base de datos y verificar que efectivamente se ha guardado la información y si realmente MongoDB la ha creado.

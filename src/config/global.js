@@ -1,8 +1,8 @@
 export default {
   global: {
-    componenteFormativo: 'Construcción aplicación web',
+    componenteFormativo: 'Construcción aplicación <em>web</em>',
     descripcionCurso:
-      'En este componente formativo se realizará una aplicación web completa (<em>Backend y Frontend</em>). Se utilizarán tecnologías del lado del servidor como Node.js, MongoDB, Express y del lado del cliente AngularJS y Materialize. La aplicación consumirá un <em>API REST</em> con el propósito de hacer el registro de empleados en una empresa.',
+      'En este componente formativo se realizará una aplicación <em>web</em> completa (<em>Backend y Frontend</em>). Se utilizarán tecnologías del lado del servidor como Node.js, MongoDB, Express y del lado del cliente AngularJS y Materialize. La aplicación consumirá un <em>API REST</em> con el propósito de hacer el registro de empleados en una empresa.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -45,7 +45,8 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Construcción del Backend de la aplicación web',
+        titulo:
+          'Construcción del <em>Backend</em> de la aplicación <em>web</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -98,7 +99,8 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Construcción del Front-end de la aplicación <em>web</em>',
+        titulo:
+          'Construcción del <em>Front-end</em> de la aplicación <em>web</em>',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -219,7 +221,7 @@ export default {
       referencia:
         'EDteam.(2020). ¿Qué es <em>Backend</em> y <em>Front-end?</em> (guía completa) ',
       tipo: 'Video',
-      link: 'https://www.google.com/',
+      link: 'https://youtu.be/50RbVujPPGs',
     },
     {
       tema: 'Instalación MongoDB',
@@ -263,7 +265,7 @@ export default {
       link: 'https://www.youtube.com/watch?v=wM7NJtQ0F6U',
     },
     {
-      tema: 'Proyecto web',
+      tema: 'Proyecto <em>web</em>',
       referencia: 'GitLab. (2021). Gestion-empleados.',
       tipo: 'Software',
       link: 'https://gitlab.com/jonathanga/gestion-empleados',
@@ -305,7 +307,7 @@ export default {
     },
     {
       referencia:
-        'Ghimire, B. (2021). Los 12 mejores editores de código y texto para desarrolladores web. Geekflare. ',
+        'Ghimire, B. (2021). Los 12 mejores editores de código y texto para desarrolladores <em>web</em>. Geekflare. ',
       link: 'https://geekflare.com/es/code-text-editors',
     },
     {
@@ -392,25 +394,19 @@ export default {
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Nombre',
-        cargo: 'Diseño web',
+        nombre: 'Oscar Ivan Uribe Ortiz',
+        cargo: 'Diseño <em>web</em>',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Nombre',
-        cargo: 'Producción audiovisual',
-        centro:
-          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
-      },
-      {
-        nombre: 'Nombre',
+        nombre: 'Magdi Khalifah',
         cargo: 'Desarrollo front-end',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',
       },
       {
-        nombre: 'Nombre',
+        nombre: 'Yuly Marcela Gómez Tarazona',
         cargo: 'Validación de diseño y contenido',
         centro:
           'Centro Industrial del Diseño y la Manufactura - Regional Santander',

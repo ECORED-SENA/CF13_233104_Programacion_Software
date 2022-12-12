@@ -5,11 +5,11 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 2
-      h1 Construcción del Front-end de la aplicación #[em web]
+      h1 Construcción del #[em Front-end] de la aplicación #[em web]
 
-    p(data-aos="fade-left") Para esta sección se plantea generar una sola vista, la cual corresponde al formulario de registro de empleados, por esta razón no es necesario generar sketch o maquetación para evaluar la novación entre distintos componentes. No obstante, se emplean buenas prácticas de diseño amparadas en las técnicas y tecnologías como Materialize, que dará alcance a varias reglas de estilo para los sistemas interactivos de software.
+    p(data-aos="fade-left") Para esta sección se plantea generar una sola vista, la cual corresponde al formulario de registro de empleados, por esta razón no es necesario generar #[em sketch] o maquetación para evaluar la novación entre distintos componentes. No obstante, se emplean buenas prácticas de diseño amparadas en las técnicas y tecnologías como Materialize, que dará alcance a varias reglas de estilo para los sistemas interactivos de #[em software].
 
-    p(data-aos="fade-left").mb-5 En la siguiente figura se muestra una representación gráfica de ejemplo de un Front-end.
+    p(data-aos="fade-left").mb-5 En la siguiente figura se muestra una representación gráfica de ejemplo de un #[em Front-end].
 
     .row.justify-content-center
       .col-lg-10
@@ -19,7 +19,7 @@
 
         figure(data-aos="zoom-in")
           img(src="@/assets/curso/temas/t2/t2_01.png", alt="alt")
-        figcaption Nota. Ejemplo interfaz gráfica Front-end. 
+        figcaption Nota. Ejemplo interfaz gráfica #[em Front-end]. 
 
     separador
 
@@ -44,7 +44,7 @@
         figcaption Nota. Terminal de VS Code. Instalación de Angular CLI.
 
       .col-lg-10(data-aos="fade-left")
-        p.text-center Ahora, se inicia un proyecto de Angular llamado Front-end, por lo que desde la consola de comandos se escribe:
+        p.text-center Ahora, se inicia un proyecto de Angular llamado #[em Front-end], por lo que desde la consola de comandos se escribe:
 
     .row.justify-content-center.mb-5(data-aos="zoom-in")
       .col-auto
@@ -61,14 +61,14 @@
 
         figure(data-aos="zoom-in")
           img(src="@/assets/curso/temas/t2/t2_03.png", alt="alt")
-        figcaption Nota.Estructura de directorios del proyecto del Front-end.
+        figcaption Nota.Estructura de directorios del proyecto del #[em Front-end].
 
-    p(data-aos="fade-left").text-center.mb-5 A continuación, se debe ingresar a la carpeta del Front-end e iniciar el servidor digitando la terminal del VS Code de la siguiente línea de comandos:
+    p(data-aos="fade-left").text-center.mb-5 A continuación, se debe ingresar a la carpeta del #[em Front-end] e iniciar el servidor digitando la terminal del VS Code de la siguiente línea de comandos:
 
     .row.justify-content-center.mb-5(data-aos="zoom-in")
       .col-auto
         .bg--code_02
-          p.mb-0 ng new frontend
+          p.mb-0 ng serve
 
     p(data-aos="fade-left") Es importante recordar que para ingresar por la terminal a la carpeta de #[em Front-end] se hace con el comando #[strong cd], es decir, #[strong cd Frontend/]
 
@@ -91,6 +91,8 @@
 
     p(data-aos="fade-left") Después de iniciado el servidor  Angular, se revisa la estructura de directorios de este #[em framework], que, aunque son muchos archivos, únicamente es necesario concentrarse en la carpeta que se encuentra en la ruta #[strong frontend/src/app], de esta forma en la carpeta #[strong #[em app]] se realizará todo el código que se necesita para el proyecto. 
 
+    p De manera adicional, para dar coherencia al proyectoo, dentro de la carpeta #[em app], se crean 3 carpetas más, que son #[strong #[em models, service y componenets]] para tener definido el proyecto, tal como se muestra en la siguiente figura:
+
     .bg--full.img_04
       .row.justify-content-center
         .col-lg-10.mb-5
@@ -109,20 +111,20 @@
           .row.align-items-end.mb-5
             .col-lg
               .bg--blue.p-4
-                p(data-aos="fade-left") Dentro la carpeta components se genera un componente llamado empleados con Angular CLI:
+                p(data-aos="fade-left") Dentro la carpeta #[em components] se genera un componente llamado empleados con Angular CLI:
 
                 .row.justify-content-center(data-aos="zoom-in")
                   .col-auto
                     .bg--code_01
                       p.mb-0 ng g c empleados
                 .hr_line
-                p(data-aos="fade-left") Dentro la carpeta models se crea la clase empleado con:
+                p(data-aos="fade-left") Dentro la carpeta #[em models] se crea la clase empleado con:
                 .row.justify-content-center(data-aos="zoom-in")
                   .col-auto
                     .bg--code_02
                       p.mb-0 ng g class empleado
                 .hr_line
-                p(data-aos="fade-left") Dentro de la carpeta services se crea un servicio llamado empleado con la siguiente línea:
+                p(data-aos="fade-left") Dentro de la carpeta #[em services] se crea un servicio llamado empleado con la siguiente línea:
                 .row.justify-content-center(data-aos="zoom-in")
                   .col-auto
                     .bg--code_01
@@ -192,7 +194,7 @@
               figure
                 img(src="@/assets/curso/temas/t1/t1_14.svg", alt="alt").img85
             .col
-              p.mb-0 De manera adicional, en la sección material complementario de este documento encontrará el enlace a la guía de uso de Materialize donde están los CDN y ejemplos sobre este framework de estilos.
+              p.mb-0 De manera adicional, en la sección material complementario de este documento encontrará el enlace a la guía de uso de Materialize donde están los CDN y ejemplos sobre este #[em framework] de estilos.
 
     separador
 
@@ -283,7 +285,7 @@
       .col-lg-9.mb-4.mb-lg-0(data-aos="fade-left")
         p.mb-4 Una vez realizada la configuración en los módulos de la aplicación se inicia la construcción del modelo de la aplicación, por lo que se empieza la codificación dentro del archivo empleado.ts cuya ruta es models/empleado.ts
         .cajon.cjn--mint
-          p Dentro de este archivo se define la estructura de datos que está asociada a lo que describió en el Backend. En la figura que aparece a continuación, se presenta el archivo empleado.ts (puede descargar el contenido de estas instrucciones en el archivo empleado.ts disponible en la carpeta anexos).
+          p Dentro de este archivo se define la estructura de datos que está asociada a lo que describió en el #[em Backend]. En la figura que aparece a continuación, se presenta el archivo empleado.ts (puede descargar el contenido de estas instrucciones en el archivo empleado.ts disponible en la carpeta anexos).
       .col-lg-3.col-8(data-aos="zoom-in")
         figure
           img(src="@/assets/curso/temas/t2/t2_10.png", alt="alt")
@@ -463,7 +465,7 @@
       .col-lg-6.mb-4.mb-lg-0(data-aos="fade-left")
         p.mb-0 Una vez se importan estos módulos se enfocan los esfuerzos en los métodos; para el caso de estudio tendrá el método de agregar empleado. Al respecto toma como parámetro la existencia de datos del formulario, al ser verdadero, se llama al método del servicio empleado (el cual ya fue construido anteriormente) #[strong PostEmpleado] y le entrega los valores para que sean llevados al servidor y que sean almacenados en la base de datos de MongoDB.
       .col-lg-6(data-aos="fade-left")
-        p De manera adicional, como ejemplo de este componente, se agrega un plus y es que en cada adición de datos en el formulario, este se pueda limpiar de manera automática, por lo que se incorpora una función llamada #[strong #[em reset Form]], en la cual como su nombre lo indica lo que hace es resetear o limpiar los campos del formulario a través de la función intrínseca reset().
+        p De manera adicional, como ejemplo de este componente, se agrega un plus y es que en cada adición de datos en el formulario, este se pueda limpiar de manera automática, por lo que se incorpora una función llamada #[strong #[em reset Form]], en la cual como su nombre lo indica lo que hace es resetear o limpiar los campos del formulario a través de la función intrínseca #[em reset()].
 
     figure(data-aos="zoom-in")
       img(src="@/assets/curso/temas/t2/t2_12.png", alt="alt")
@@ -558,7 +560,7 @@
     .row.justify-content-center.mb-5
       .col-lg-6.gx-0(data-aos="flip-left")
         .bg--purple.p-5.hg_100
-          p Ya finalizada la codificación de cada uno de los archivos del Front-end es necesario revisar cómo ha quedado la aplicación; no obstante, este paso no se hace al final, sino que por lo sucinto de este componente se presenta en esta instancia, ya que como buena práctica, en cada bloque de desarrollo o línea debe revisarse el resultado obtenido, es decir, trabajar de manera paralela.
+          p Ya finalizada la codificación de cada uno de los archivos del #[em Front-end] es necesario revisar cómo ha quedado la aplicación; no obstante, este paso no se hace al final, sino que por lo sucinto de este componente se presenta en esta instancia, ya que como buena práctica, en cada bloque de desarrollo o línea debe revisarse el resultado obtenido, es decir, trabajar de manera paralela.
 
           p Una muestra de la interfaz de la aplicación se ilustra en la siguiente figura:
 
@@ -587,7 +589,7 @@
 
     .titulo-sexto.color-acento-contenido.mb-4(data-aos="fade-right")
       h5 Figura 37.
-      span Registro empleado.
+      span Notificación #[em Toast de materialize].
 
     figure(data-aos="zoom-in")
       img(src="@/assets/curso/temas/t2/t2_16.png", alt="alt")
@@ -620,7 +622,7 @@
       .col-lg-8(data-aos="fade-left")
         p Se espera que haya sido de aprendizaje el uso de tecnologías tanto del lado del cliente como del lado del servidor, este es uno de los ejercicios más completos y precisos que se pueden realizar en materia de esta disciplina del desarrollo #[em web]. En ese sentido, se exhorta a seguir estudiando más alternativas sobre este tipo de desarrollos que son muy demandados en la industria del #[em software].
 
-        p Finalmente, se comparte en el material de apoyo todo el proyecto web realizado desde la plataforma de #[em Gitlab], se encuentra con el nombre de Proyecto #[em web].
+        p Finalmente, se comparte en el material de apoyo todo el proyecto #[em web] realizado desde la plataforma de #[em Gitlab], se encuentra con el nombre de Proyecto #[em web].
       .col-lg-4(data-aos="zoom-in")
         figure
           img(src="@/assets/curso/temas/t2/t2_19.png", alt="alt")

@@ -9,7 +9,7 @@
 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-left")
-        p.mb-4 Los paradigmas de desarrollo permiten mejorar el proceso de construcción de software y las metodologías de ingeniería de software sirven de base para la ejecución de cualquier proyecto de desarrollo.
+        p.mb-4 Los paradigmas de desarrollo permiten mejorar el proceso de construcción de #[em software] y las metodologías de ingeniería de software sirven de base para la ejecución de cualquier proyecto de desarrollo.
 
         figure(data-aos="zoom-in")
           img(src="@/assets/curso/temas/t3/t3_01.png", alt="alt")
@@ -19,7 +19,7 @@
         .cstm_h3
           h3 Lenguajes de programación
 
-    p(data-aos="fade-left").mb-5 Existen diversos lenguajes de programación que permiten dar una serie de instrucciones para definir sentencias con miras a  controlar un sistema de información. A continuación, se presentan los lenguajes de programación más comunes para el desarrollo de software:
+    p(data-aos="fade-left").mb-5 Existen diversos lenguajes de programación que permiten dar una serie de instrucciones para definir sentencias con miras a  controlar un sistema de información. A continuación, se presentan los lenguajes de programación más comunes para el desarrollo de #[em software]:
 
     .crd.bg_slider_01.brd--rad_02.px-4.py-2.mb-5(data-aos="zoom-in")
       SlyderA(tipo="b")
@@ -86,7 +86,7 @@
           h3 Paradigmas de programación
 
     .bg--full.img_05.mb-5
-      p(data-aos="fade-left") Hace referencia a los principios fundamentales para la creación del software; es decir, los diferentes estilos de programación o generación de código para direccionar a las máquinas y demás dispositivos tecnológicos.
+      p(data-aos="fade-left") Hace referencia a los principios fundamentales para la creación del #[em software]; es decir, los diferentes estilos de programación o generación de código para direccionar a las máquinas y demás dispositivos tecnológicos.
 
       .row.justify-content-center.mb-5
         .col-lg-10
@@ -141,7 +141,7 @@
             .col-lg             
               p Es un editor HTML Wysiwyg de próxima generación, es de muy buena integración y con un diseño limpio. Contiene editor de texto JS de alto rendimiento y fácil de usar.
 
-              p.mb-0 Contiene más de 170 bloques de diseño que se basan en Bootstrap para crear diseños #[em web] exclusivos. Es de licencia gratuita. Es de muy buena interacción y personalización. Del mismo modo, es óptimo para el desarrollo del backend que facilita la sintaxis para el desarrollador.
+              p.mb-0 Contiene más de 170 bloques de diseño que se basan en Bootstrap para crear diseños #[em web] exclusivos. Es de licencia gratuita. Es de muy buena interacción y personalización. Del mismo modo, es óptimo para el desarrollo del #[em Backend] que facilita la sintaxis para el desarrollador.
 
           .row.align-items-center(titulo="UltraEdit")
             .col-auto.mb-4.m-auto
@@ -167,7 +167,7 @@
                 img(src='@/assets/curso/temas/t3/t3_15.png', alt='')
                
             .col-lg             
-              p Es un editor de texto moderno, ligero y de código abierto demasiado potente. Facilita el diseño en el navegador con herramientas visuales muy ágiles y eficientes. Diseñado para programadores #[em web] y desarrolladores frontend. 
+              p Es un editor de texto moderno, ligero y de código abierto demasiado potente. Facilita el diseño en el navegador con herramientas visuales muy ágiles y eficientes. Diseñado para programadores #[em web] y desarrolladores #[em frontend]. 
 
               p.mb-0 Una característica diferente es que posee integrado un servidor de vista previa en vivo, mostrando la página actual y no requiere una actualización manual cuando se cambia de archivos o se modifica el código. 
 
@@ -201,16 +201,16 @@
           h3 Costos asociados al desarrollo de #[em software]   
 
     .bg--full.img_06.pb-5.mb-5
-      p(data-aos="fade-left") La estimación de costos de desarrollo de software es el factor más importante en todo proyecto informático. Es primordial contar con temas estratégicos para tener indicadores que midan el costo de los mismos, y que logren garantizar la eficiencia, calidad y competitividad. Se trata de identificar los recursos necesarios para lograr que un proyecto sea eficiente. 
+      p(data-aos="fade-left") La estimación de costos de desarrollo de #[em software] es el factor más importante en todo proyecto informático. Es primordial contar con temas estratégicos para tener indicadores que midan el costo de los mismos, y que logren garantizar la eficiencia, calidad y competitividad. Se trata de identificar los recursos necesarios para lograr que un proyecto sea eficiente. 
 
       .row.justify-content-center
         .col-lg-10.mb-5
           .bg--white.brad_01.p-4
             .row.justify-content-center.align-items-center
               .col-lg.mb-4.mb-lg-0(data-aos="fade-left")
-                p Para la valoración o estimación de recursos para el desarrollo de software, existen algunos componentes como los gastos directos o indirectos. 
+                p Para la valoración o estimación de recursos para el desarrollo de #[em software], existen algunos componentes como los gastos directos o indirectos. 
 
-                p.mb-0 El costo directo de los programas software comprende desde los ingresos de cada individuo del equipo, los pagos que se deben hacer por la utilización del hardware y otros elementos para la realización del trabajo.
+                p.mb-0 El costo directo de los programas #[em software] comprende desde los ingresos de cada individuo del equipo, los pagos que se deben hacer por la utilización del #[em hardware] y otros elementos para la realización del trabajo.
               .col-lg-auto.col-8(data-aos="zoom-in")
                 figure
                   img(src='@/assets/curso/temas/t3/t3_19.png', alt='')
@@ -226,7 +226,7 @@
         .cstm_h3
           h3 Factores que afectan el costo del #[em software]  
 
-    p(data-aos="fade-left").mb-5 La estimación del presupuesto en el desarrollo de software es una tarea compleja la cual involucra diferentes factores que afectan los tiempos reales y los esfuerzos que se invierten en cada proyecto. Los ingenieros de software son los responsables de definir tanto los procesos metodológicos como los organizacionales que pueden generar incertidumbre, sobreestimación o llevar al fracaso del proyecto.
+    p(data-aos="fade-left").mb-5 La estimación del presupuesto en el desarrollo de #[em software] es una tarea compleja la cual involucra diferentes factores que afectan los tiempos reales y los esfuerzos que se invierten en cada proyecto. Los ingenieros de #[em software] son los responsables de definir tanto los procesos metodológicos como los organizacionales que pueden generar incertidumbre, sobreestimación o llevar al fracaso del proyecto.
 
     .row.justify-content-center.mb-5(data-aos="zoom-in")
       .col-lg-10.col-md-8
@@ -240,7 +240,7 @@
         .cstm_h3
           h3 Estimación de costo de desarrollo del #[em software]  
 
-    p(data-aos="fade-left").mb-5 Para lograr realizar una buena estimación en el desarrollo de software, los atributos clave de la cotización de un producto #[em software] se deben basar en una metodología de estimación confiable, esta debe ser completa y contener todos los detalles como la planificación, estimular el presupuesto y presupuestar los costos. Los cálculos deben ser acordados por todas las partes interesadas y el presupuesto debe ser ejecutado por el equipo de desarrollo. De Igual manera, los riesgos deben medir, comprender y tener en cuenta los siguientes elementos para definir la estimación de costos del proyecto.
+    p(data-aos="fade-left").mb-5 Para lograr realizar una buena estimación en el desarrollo de #[em software], los atributos clave de la cotización de un producto #[em software] se deben basar en una metodología de estimación confiable, esta debe ser completa y contener todos los detalles como la planificación, estimular el presupuesto y presupuestar los costos. Los cálculos deben ser acordados por todas las partes interesadas y el presupuesto debe ser ejecutado por el equipo de desarrollo. De Igual manera, los riesgos deben medir, comprender y tener en cuenta los siguientes elementos para definir la estimación de costos del proyecto.
 
     .bg--full.img_02.pb-5
       .row.justify-content-center.mb-5
