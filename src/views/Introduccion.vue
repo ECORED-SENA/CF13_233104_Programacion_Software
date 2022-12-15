@@ -49,8 +49,8 @@
                     p.text-white.mb-0 Asimismo, en el siguiente video podrá encontrar información complementaria sobre los elementos, características y componentes del #[em Front-end y Backend]:
                   .col-sm-auto
                     a.boton.color-acento-botones(href="https://youtu.be/50RbVujPPGs" target="_blank")
-                      span Descargar
-                      i.fas.fa-file-download  
+                      span ver
+                      i.fas.fa-link  
 
                       
 

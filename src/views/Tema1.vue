@@ -75,7 +75,7 @@
     #t_1_2.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 1.2 Desarrollo del index.js
 
-    p(data-aos="fade-left").mb-4 El siguiente paso es iniciar con el desarrollo del archivo principal del #[em Backend], que se llama index.js como se muestra en la siguiente figura, (puede descargar el contenido de estas instrucciones en el archivo index.js disponible en la carpeta anexos).
+    p(data-aos="fade-left").mb-4 El siguiente paso es iniciar con el desarrollo del archivo principal del #[em Backend], que se llama index.js como se muestra en la siguiente figura.
 
     .row.justify-content-center.mb-5
       .col-lg-10      
@@ -109,7 +109,18 @@
           p.pd--1 #[span.c1 console]#[span.c2 .log](#[span.c3 'server activo en el puerto'], #[span.c1 app]#[span.c2 .get](#[span.c3 'port']));
           p }); 
 
-        figcaption.mb-4 Nota. Código completo archivo index.js
+        figcaption.mb-5 Nota. Código completo archivo index.js
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el #[strong archivo index.js] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/index_js.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura index.js
+
 
         p(data-aos="fade-left").mb-5 En la figura anterior se aprecia el código del archivo index.js para el proyecto, por lo cual en la medida del avance de este componente se irá explicando cada línea de código que se requiera ejecutar. En ese sentido, se inicia con el requerimiento de Express y se almacena en una constante en JavaScript llamada Express. De esta forma se tendrá el acceso a todo el funcionamiento del servidor con la línea de código:
 
@@ -130,7 +141,7 @@
               .bg--code_02
                 p.mb-0 app.set('port', process.env.PORT || 3000);
 
-          p(data-aos="fade-left") De este modo, set es para crear una variable que va a ser accedida desde cualquier parte de la aplicación, por lo que la estructura es la siguiente (nombre var, valor); process es porque cuando se despliegue la app no se va a tener la opción de definir el puerto, sino que el mismo servicio de la nube ayudará a definirlo, en el caso de que el puerto 3000 esté ocupado.
+          p(data-aos="fade-left") De este modo, #[em set] es para crear una variable que va a ser accedida desde cualquier parte de la aplicación, por lo que la estructura es la siguiente (nombre var, valor); #[em process] es porque cuando se despliegue la app no se va a tener la opción de definir el puerto, sino que el mismo servicio de la nube ayudará a definirlo, en el caso de que el puerto 3000 esté ocupado.
 
           p(data-aos="fade-left") Con el fin de revisar los cambios en el servidor de manera automática se tiene planeada la instalación de algunas herramientas que harán más fácil el desarrollo sobre Node.js, por lo que se instala Nodemon (Vortexbird, 2017) como una utilidad que monitorea de manera constante los cambios en el código fuente que se está desarrollando y de manera automática reinicia el servidor. Por lo tanto, la línea de código utilizada en la terminal de VS Code es:
 
@@ -141,14 +152,14 @@
 
     .row.justify-content-center
       .col-lg-10.mb-5
-        p(data-aos="fade-left").mb-5 Esto quiere decir que Nodemon será instalado como una dependencia de desarrollo y no como dependencia general del proyecto. Por lo que se configura el archivo package.json según se muestra en la siguiente figura (puede descargar el contenido de estas instrucciones en el archivo package.json disponible en la carpeta), y se inicia a ejecutar el servidor con la siguiente línea de comando:
+        p(data-aos="fade-left").mb-5 Esto quiere decir que Nodemon será instalado como una dependencia de desarrollo y no como dependencia general del proyecto. Por lo que se configura el archivo package.json según se muestra en la siguiente figura, y se inicia a ejecutar el servidor con la siguiente línea de comando:
 
         .row.justify-content-center(data-aos="zoom-in")
           .col-auto
             .bg--code_01
               p.mb-0 npm run dev
 
-      .col-lg-8.mb-5
+      .col-lg-9.mb-5
         .titulo-sexto.color-acento-contenido(data-aos="fade-right")
           h5 Figura 6.
           span Estructura package.json.
@@ -175,7 +186,17 @@
           p.pd--1 #[span.c0 "nodemon"]: #[span.c3 "^2.0.7"]
           p.pd--1 }
           p }
-        figcaption Nota. Código completo archivo package.json.
+        figcaption.mb-5 Nota. Código completo archivo package.json.
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong package.json] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/package_json.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura package.json
     
       .col-lg-10(data-aos="fade-left")
         p.mb-5 Ahora, se construyen las Middleware dentro del archivo de index.js como se puede apreciar en la figura anterior, encargadas de procesar los datos, es decir, cuando se solicitan o envían al servidor. Al respecto, el servidor debe entender los datos que le llegan del cliente (AngularJS toma los datos del cliente y los envía en formato JSON) y es por eso que se necesita algún tipo de conversión, por lo que se requiere del uso del formato JSON ejecutando la siguiente instrucción:
@@ -203,7 +224,7 @@
     separador
 
     #t_1_3.titulo-segundo.color-acento-contenido(data-aos="fade-right")
-      h2 1.3 Configuración e instalación de la bbase de datos MongoDB
+      h2 1.3 Configuración e instalación de la base de datos MongoDB
 
     p(data-aos="fade-left") A continuación, se realizará la conexión de la aplicación del servidor a la base de datos, por lo que se inicia a configurar y a instalar los recursos necesarios antes de iniciar a desarrollar. En ese sentido, se instala MongoDB de manera persistente en el equipo de desarrollo, para lo cual se deja información para su instalación en la sección material complementario de este documento. La siguiente figura representa de manera general el diagrama entidad-relación de una base de datos.
 
@@ -255,7 +276,7 @@
     #t_1_4.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 1.4 Configuración de database.js
 
-    p(data-aos="fade-left") Con todas las herramientas necesarias para la conexión de la aplicación a la base de datos se empieza a desarrollar y a configurar sobre el archivo database.js. (Puede descargar el contenido de estas instrucciones en el archivo database.js disponible en la carpeta anexos).
+    p(data-aos="fade-left") Con todas las herramientas necesarias para la conexión de la aplicación a la base de datos se empieza a desarrollar y a configurar sobre el archivo database.js. 
 
     .row.justify-content-center
       .col-lg-10.mb-4
@@ -270,7 +291,17 @@
           p.pd--1 #[span.c2 .then](#[span.c1 db] => #[span.c1 console]#[span.c2 .log](#[span.c3 'DB is connected']))
           p.pd--1 #[span.c2 .catch](#[span.c1 err] => #[span.c1 console].#[span.c2 error](#[span.c1 err]));  
           p #[span.c4 module].#[span.c4 exports] = #[span.c4 mongoose]; 
-        figcaption Nota. Código completo archivo database.js.
+        figcaption.mb-5 Nota. Código completo archivo database.js.
+
+        p.text-center Puede descargar el contenido de estas instrucciones en el archivo #[strong database.js] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/database_js.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura database.js.
       
       .col-lg-10
         .bg--blue.p-4.mb-4
@@ -298,7 +329,7 @@
     #t_1_5.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 1.5 Configuración de las rutas del proyecto con Node.js
 
-    p(data-aos="fade-left").mb-4 El siguiente paso es configurar las rutas o URL por donde se van a enviar o recibir los datos, por lo que se crea un archivo llamado empleado.route.js dentro de la carpeta #[em routes] (puede descargar el contenido de estas instrucciones en el archivo empleado.route.js disponible en la carpeta anexos). En este primer apartado lo que se quiere es revisar en primera instancia es el funcionamiento de las rutas, por lo que a manera de prueba se tiene el código que se muestra en la siguiente figura:
+    p(data-aos="fade-left").mb-4 El siguiente paso es configurar las rutas o URL por donde se van a enviar o recibir los datos, por lo que se crea un archivo llamado empleado.route.js dentro de la carpeta #[em routes]. En este primer apartado lo que se quiere es revisar en primera instancia es el funcionamiento de las rutas, por lo que a manera de prueba se tiene el código que se muestra en la siguiente figura:
 
     .bg--full.img_02.mb-5
       .row.justify-content-center
@@ -325,7 +356,17 @@
             p })  
             p #[span.c0 module.exports] = #[span.c0 router;]
 
-          figcaption Nota. Código completo archivo empleado.route.js para comprobar el funcionamiento de las rutas.
+          figcaption.mb-5 Nota. Código completo archivo empleado.route.js para comprobar el funcionamiento de las rutas.
+
+          p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleado.route.js] disponible a continuación.
+
+          .row.justify-content-center
+            .col-auto
+              a.anexo.mb-4(:href="obtenerLink('/downloads/empleado_route_js.zip')" target="_blank")
+                .anexo__icono
+                  img(src="@/assets/template/icono-zip.svg")
+                .anexo__texto
+                  p Anexo. Estructura empleado.route.js
 
         .col-lg-10
           .row.justify-content-center
@@ -353,7 +394,7 @@
           img(src="@/assets/curso/temas/t1/t1_13.png", alt="alt")
           figcaption Nota. Vista desde un navegador.
 
-    p(data-aos="fade-left") Ya visto un ejemplo del funcionamiento de las rutas es necesario comprender su comportamiento, por lo que cada solicitud debe ir asociada a una ruta, y esta a su vez a un intercambio de información o de datos, es decir, de interacción con la BD. En ese sentido, es más que necesario la construcción del modelo empleado.js con datos específicos para los empleados dentro de la carpeta #[em models] (puede descargar el contenido de estas instrucciones en el archivo empleado.js disponible en la carpeta anexos).
+    p(data-aos="fade-left") Ya visto un ejemplo del funcionamiento de las rutas es necesario comprender su comportamiento, por lo que cada solicitud debe ir asociada a una ruta, y esta a su vez a un intercambio de información o de datos, es decir, de interacción con la BD. En ese sentido, es más que necesario la construcción del modelo empleado.js con datos específicos para los empleados dentro de la carpeta #[em models].
 
     .row.justify-content-center.mb-5            
       .col-lg-10.mb-5
@@ -372,7 +413,17 @@
           p });
           p #[span.c4 module.exports] = #[span.c4 mongoose].#[span.c2 model](#[span.c3 'Empleado'], #[span.c0 EmpleadoSchema]);
 
-        figcaption Nota. Código completo archivo empleado.js.
+        figcaption.mb-5 Nota. Código completo archivo empleado.js.
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleado.js] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/empleado_js.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura empleado.js
 
       .col-lg-8(data-aos="zoom-in")
         .crd--avatarH
@@ -388,7 +439,7 @@
     #t_1_6.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 1.6 Desarrollo de controladores para la API REST
 
-    p(data-aos="fade-left") Una de las mejores prácticas para estructurar una aplicación cuando va en crecimiento es el uso de los controladores. Estos se encargan de definir los métodos y acciones que necesitan las rutas. Por lo tanto, se crea el archivo empleado.controller.js dentro de la carpeta #[em controllers] (puede descargar el contenido de estas instrucciones en el archivo empleado.controller.js disponible en la carpeta anexos).
+    p(data-aos="fade-left") Una de las mejores prácticas para estructurar una aplicación cuando va en crecimiento es el uso de los controladores. Estos se encargan de definir los métodos y acciones que necesitan las rutas. Por lo tanto, se crea el archivo empleado.controller.js dentro de la carpeta #[em controllers].
 
     .row.justify-content-center.mb-5
       .col-lg-10
@@ -452,7 +503,17 @@
           p #[span.c4 //exporto el módulo]
           p #[span.c1 module.exports] = #[span.c1 empleadoCtrl;]
         
-        figcaption Nota. Código completo archivo empleado.controller.js.
+        figcaption.mb-5 Nota. Código completo archivo empleado.controller.js.
+
+        p.text-center.mb-5 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleado.controller.js] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/empleado_controller_js.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura empleado.controller.js
 
     p(data-aos="fade-left").mb-5 Se inicia explicando de manera sucinta el código presentado anteriormente. En primera instancia se requiere el modelo realizado denominado empleado.js, por lo cual se almacena en una constante Empleado. 
 
@@ -473,9 +534,7 @@
       .col
         p.mb-0 Además, el método de crear empleado tiene una naturaleza similar al anterior, solo que en este método se crea una nueva instancia de empleado #[strong #[em new] Empleado]. De esta forma lo que seguiría es guardar ese nuevo registro con #[strong #[em save()]]. Es importante anotar que hasta el momento no se ha creado la base de datos en MongoDB, pero apenas se almacena un registro se crea la base de datos. 
 
-    p(data-aos="fade-left") Para el método de editar empleado presenta una sintaxis interesante, en primer lugar se escribe de otra forma para capturar el id del usuario que se quiere actualizar { id }, además crea una constante #[strong empleadoEdit] para pasarle los datos traídos del cliente y finalmente se utiliza #[em await], para dar una espera en la acción de encontrar por id y actualizar a través de la función #[strong set], que se utilizará para modificar los datos en última instancia.
-
-    p(data-aos="fade-left").mb-5 Para el método de editar empleado presenta una sintaxis interesante, en primer lugar se escribe de otra forma para capturar el id del usuario que se quiere actualizar { id }, además crea una constante empleadoEdit para pasarle los datos traídos del cliente y finalmente se utiliza #[em await], para dar una espera en la acción de encontrar por id y actualizar a través de la función #[em set], que se utilizará para modificar los datos en última instancia.
+    p(data-aos="fade-left") Para el método de editar empleado presenta una sintaxis interesante, en primer lugar se escribe de otra forma para capturar el id del usuario que se quiere actualizar { id }, además crea una constante #[strong empleadoEdit] para pasarle los datos traídos del cliente y finalmente se utiliza #[em await], para dar una espera en la acción de encontrar por id y actualizar a través de la función #[strong set], que se utilizará para modificar los datos en última instancia.    
 
     .row.justify-content-center
       .col-lg-10.mb-5

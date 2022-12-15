@@ -91,7 +91,7 @@
 
     p(data-aos="fade-left") Después de iniciado el servidor  Angular, se revisa la estructura de directorios de este #[em framework], que, aunque son muchos archivos, únicamente es necesario concentrarse en la carpeta que se encuentra en la ruta #[strong frontend/src/app], de esta forma en la carpeta #[strong #[em app]] se realizará todo el código que se necesita para el proyecto. 
 
-    p De manera adicional, para dar coherencia al proyectoo, dentro de la carpeta #[em app], se crean 3 carpetas más, que son #[strong #[em models, service y componenets]] para tener definido el proyecto, tal como se muestra en la siguiente figura:
+    p De manera adicional, para dar coherencia al proyecto, dentro de la carpeta #[em app], se crean 3 carpetas más, que son #[strong #[em models, service y componenets]] para tener definido el proyecto, tal como se muestra en la siguiente figura:
 
     .bg--full.img_04
       .row.justify-content-center
@@ -159,7 +159,7 @@
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 2.3 Incorporación de Materialize al proyecto #[em web]
 
-    p(data-aos="fade-left").mb-5 Se incorpora Materialize al proyecto por medio de la inclusión de los CDN (red de distribución de contenidos) de hojas de estilos, JavaScript e iconos en el documento index.html del #[em Front-end], por lo que la ruta al archivo es #[strong #[em FrontEnd/src/index.html]] (puede descargar el contenido de estas instrucciones en el archivo index.html disponible en la carpeta anexos). En la figura 28 puede ver este proceso.
+    p(data-aos="fade-left").mb-5 Se incorpora Materialize al proyecto por medio de la inclusión de los CDN (red de distribución de contenidos) de hojas de estilos, JavaScript e iconos en el documento index.html del #[em Front-end], por lo que la ruta al archivo es #[strong #[em FrontEnd/src/index.html]]. En la figura 28 puede ver este proceso.
 
     .row.justify-content-center
       .col-lg-10.mb-5
@@ -185,7 +185,17 @@
           p &#60;#[span.c0 /body]&#62;
           p.mb-0 &#60;#[span.c0 /html]&#62;
 
-        figcaption Nota. Código completo archivo index.html.
+        figcaption.mb-5 Nota. Código completo archivo index.html.
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong index.html] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/index_html.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura index.html
 
       .col-lg-8(data-aos="zoom-in")
         .crd--avatarH
@@ -203,7 +213,7 @@
 
     .bg--full.img_03
 
-      p(data-aos="fade-left").mb-5 Ahora se inicia con la modificación del archivo app.component.html, dado que en este archivo se llaman los componentes de la aplicación que para el caso de estudio propuesto se denomina empleados. Este cambio se ilustra a continuación (puede descargar el contenido de estas instrucciones en el archivo app.component.html disponible en la carpeta anexos):
+      p(data-aos="fade-left").mb-5 Ahora se inicia con la modificación del archivo app.component.html, dado que en este archivo se llaman los componentes de la aplicación que para el caso de estudio propuesto se denomina empleados. Este cambio se ilustra a continuación.
     
       .row.justify-content-center
         .col-lg-10.mb-5
@@ -222,9 +232,21 @@
             p.pd--1 &#60;#[span.c0 app-empleados]&#62;&#60;#[span.c0 /app-empleados]&#62;
             p &#60;#[span.c0 /div]&#62;
 
-          figcaption.mb-4 Nota. Código completo archivo app.component.html.
+          figcaption.mb-5 Nota. Código completo archivo app.component.html.
 
-          p(data-aos="fade-left") En la figura anterior se observa que se adiciona la etiqueta &#60;app-empleados&#62;, indicando que se hará uso de ese componente.
+          p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong app.component.html] disponible a continuación.
+
+          .row.justify-content-center.mb-4
+            .col-auto
+              a.anexo.mb-4(:href="obtenerLink('/downloads/app_component_html.zip')" target="_blank")
+                .anexo__icono
+                  img(src="@/assets/template/icono-zip.svg")
+                .anexo__texto
+                  p Anexo. Estructura app.component.html
+
+          .cajon.cjn--mint(data-aos="zoom-in")
+            p En la figura anterior se observa que se adiciona la etiqueta #[strong &#60;app-empleados&#62;], indicando que se hará uso de ese componente.
+          
 
     separador
 
@@ -240,7 +262,7 @@
             :style="{'background-image': `url(${require('@/assets/curso/temas/t2/t2_09.png')})`}"
           )
           .bloque-texto-g__texto.p-4
-            p.mb-0 La aplicación caso de estudio será la adición de empleados utilizando un API REST, por lo que es evidente el uso de un formulario en la interfaz y además de la comunicación que debe tener el Front-end con el servidor. Por lo tanto, se cargan los módulos de formularios y de cliente HTTP en el archivo app.modules.ts (puede descargar el contenido de estas instrucciones en el archivo #[strong app.module.ts] disponible en la carpeta anexos), este proceso se muestra en la siguiente figura.
+            p.mb-0 La aplicación caso de estudio será la adición de empleados utilizando un API REST, por lo que es evidente el uso de un formulario en la interfaz y además de la comunicación que debe tener el Front-end con el servidor. Por lo tanto, se cargan los módulos de formularios y de cliente HTTP en el archivo app.modules.ts, este proceso se muestra en la siguiente figura.
 
       .col-lg-10(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido.mb-4
@@ -274,7 +296,17 @@
           p })
           p #[span.c5 export] #[span.c0 class] #[span.c4 AppModule] { }
 
-        figcaption Nota. Código completo archivo app.module.ts  
+        figcaption.mb-5 Nota. Código completo archivo app.module.ts  
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong app.module.ts] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/app_module_ts.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura app.module.ts
 
     separador
 
@@ -285,7 +317,7 @@
       .col-lg-9.mb-4.mb-lg-0(data-aos="fade-left")
         p.mb-4 Una vez realizada la configuración en los módulos de la aplicación se inicia la construcción del modelo de la aplicación, por lo que se empieza la codificación dentro del archivo empleado.ts cuya ruta es models/empleado.ts
         .cajon.cjn--mint
-          p Dentro de este archivo se define la estructura de datos que está asociada a lo que describió en el #[em Backend]. En la figura que aparece a continuación, se presenta el archivo empleado.ts (puede descargar el contenido de estas instrucciones en el archivo empleado.ts disponible en la carpeta anexos).
+          p Dentro de este archivo se define la estructura de datos que está asociada a lo que describió en el #[em Backend]. En la figura que aparece a continuación, se presenta el archivo empleado.ts.
       .col-lg-3.col-8(data-aos="zoom-in")
         figure
           img(src="@/assets/curso/temas/t2/t2_10.png", alt="alt")
@@ -311,7 +343,17 @@
           p.pd--2 #[span.c1 office]: #[span.c4 string];
           p.pd--2 #[span.c1 salary]: #[span.c4 number];
           p &#125;
-        figcaption Nota. Código completo archivo empleado.ts
+        figcaption.mb-5 Nota. Código completo archivo empleado.ts
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleado.ts] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/empleado_ts.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura empleado.ts
       
       .col-lg-10(data-aos="zoom-in")
         .row
@@ -337,7 +379,7 @@
                 figure
                   img(src="@/assets/curso/recursos/code.svg", alt="alt").img85
               .col
-                p.text-white.mb-0 A continuación, se enseña el código del archivo empleado.service.ts (puede descargar el contenido de estas instrucciones en el archivo empleado.service.ts disponible en la carpeta anexos):
+                p.text-white.mb-0 A continuación, se enseña el código del archivo empleado.service.ts.
 
         .col-lg-10.mb-5
           .titulo-sexto.color-acento-contenido.mb-4(data-aos="fade-right")
@@ -381,7 +423,17 @@
             p.pd--1 &#125;
             p &#125;
 
-          figcaption Nota. Código completo archivo empleado.service.ts.
+          figcaption.mb-5 Nota. Código completo archivo empleado.service.ts.
+
+          p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleado.service.ts] disponible a continuación.
+
+          .row.justify-content-center
+            .col-auto
+              a.anexo.mb-4(:href="obtenerLink('/downloads/empleado_service_ts.zip')" target="_blank")
+                .anexo__icono
+                  img(src="@/assets/template/icono-zip.svg")
+                .anexo__texto
+                  p Anexo. Estructura empleado.service.ts
 
         .col-lg-10(data-aos="fade-left")
           p En la anterior figura se observa la importancia de haber definido primeramente el módulo empleado.ts, de esta forma se tiene una estructura establecida de datos, y es por eso que se importa el modelo, además también se ha dado alcance a la comunicación con el servidor a través de la modificación que se hizo en el archivo app.modules.ts con la incorporación del módulo HTTPClient.
@@ -410,7 +462,7 @@
     #t_2_8.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 2.8 Desarrollo del componente empleados.components.ts
 
-    p(data-aos="fade-left") Ya definidos los servicios es necesario abordar la lógica del componente, por lo que ahora se debe enfocar los esfuerzos en el archivo empleados.components.ts, por lo que el archivo en mención se presenta a continuación (puede descargar el contenido de estas instrucciones en el archivo empleados.components.ts disponible en la carpeta anexos):
+    p(data-aos="fade-left") Ya definidos los servicios es necesario abordar la lógica del componente, por lo que ahora se debe enfocar los esfuerzos en el archivo empleados.components.ts, por lo que el archivo en mención se presenta a continuación.
 
     .row.justify-content-center.mb-5
       .col-lg-10
@@ -456,7 +508,17 @@
           p.pd--1 &#125;
           p &#125;
 
-        figcaption Nota. Código completo archivo empleados.component.ts.
+        figcaption.mb-5 Nota. Código completo archivo empleados.component.ts.
+
+        p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleados.components.ts] disponible a continuación.
+
+        .row.justify-content-center
+          .col-auto
+            a.anexo.mb-4(:href="obtenerLink('/downloads/empleados_component_ts.zip')" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                p Anexo. Estructura empleados.component.ts
 
     .cajon.cjn--blue.mb-4(data-aos="zoom-in")
       p En la figura anterior se muestra la importancia de haber creado y/o configurado con anticipación los módulos y archivos para la construcción de este componente, por lo que para el natural funcionamiento de este se hace necesario #[strong EmpleadoServices], el modelo empleado y el módulo ya definido como lo es NgForm.
@@ -480,7 +542,7 @@
     #t_2_9.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       h2 2.9 Desarrollo de la interfaz HTML empleados.component.html
 
-    p(data-aos="fade-left").mb-5 Después de definir la lógica del componente empleado lo único que hace falta es la construcción del formulario, por lo que se apunta ahora al desarrollo del archivo #[strong empleados.component.html] que se muestra a continuación (puede descargar el contenido de estas instrucciones en el archivo empleados.component.html disponible en la carpeta anexos):
+    p(data-aos="fade-left").mb-5 Después de definir la lógica del componente empleado lo único que hace falta es la construcción del formulario, por lo que se apunta ahora al desarrollo del archivo #[strong empleados.component.html] que se muestra a continuación.
 
     .titulo-sexto.color-acento-contenido.mb-4(data-aos="fade-right")
       h5 Figura 34.
@@ -536,6 +598,17 @@
       p &#60;#[span.c0 /div]&#62;
 
     figcaption.mb-5 Nota. Código completo archivo empleados.component.html.
+
+    p.text-center.mb-4 Puede descargar el contenido de estas instrucciones en el archivo #[strong empleados.component.html] disponible a continuación.
+
+    .row.justify-content-center.mb-5
+      .col-auto
+        a.anexo.mb-4(:href="obtenerLink('/downloads/empleados_component_html.zip')" target="_blank")
+          .anexo__icono
+            img(src="@/assets/template/icono-zip.svg")
+          .anexo__texto
+            p Anexo. Estructura empleados.component.html
+
 
     .row.justify-content-center.align-items-center
       .col-lg-9(data-aos="fade-left")

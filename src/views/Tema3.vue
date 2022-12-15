@@ -9,7 +9,7 @@
 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-left")
-        p.mb-4 Los paradigmas de desarrollo permiten mejorar el proceso de construcción de #[em software] y las metodologías de ingeniería de software sirven de base para la ejecución de cualquier proyecto de desarrollo.
+        p.mb-4 Los paradigmas de desarrollo permiten mejorar el proceso de construcción de #[em software] y las metodologías de ingeniería de #[em software] sirven de base para la ejecución de cualquier proyecto de desarrollo.
 
         figure(data-aos="zoom-in")
           img(src="@/assets/curso/temas/t3/t3_01.png", alt="alt")
@@ -46,7 +46,7 @@
         .row.justify-content-center.align-items-center.pt-5
           .col-lg-7.mb-4.mb-lg-0.ps-5.ps-lg-2.position-relative            
             h4 C#
-            p.mb-0 Considerado uno de los lenguajes de programación más populares y antiguos, debido a su gran portabilidad y aceptación por los grandes de la tecnología como Apple o Microsoft.Tiene características similares a Java, es muy efectivo para usar aplicaciones de escritorio y juegos de Windows, esto lo hace muy referente. De igual forma, se pueden desarrollar aplicaciones #[em web] y móviles. 
+            p.mb-0 Considerado uno de los lenguajes de programación más populares y antiguos, debido a su gran portabilidad y aceptación por los grandes de la tecnología como Apple o Microsoft. Tiene características similares a Java, es muy efectivo para usar aplicaciones de escritorio y juegos de Windows, esto lo hace muy referente. De igual forma, se pueden desarrollar aplicaciones #[em web] y móviles. 
        
           .col-lg-4.col-8
             figure
@@ -64,7 +64,7 @@
         .row.justify-content-center.align-items-center.pt-5
           .col-lg-7.mb-4.mb-lg-0.ps-5.ps-lg-2.position-relative            
             h4 JavaScript
-            p Lenguaje muy utilizado en el desarrollo #[em web], agregando interactividad al sitio, ofreciéndole animación y vida a los botones, juegos, animaciones y formularios. A nivel mundial existen muchos sitios #[em web] en los cuales el 95% de ellos contienen lenguaje JavaScript, por lo que se referenciar como un lenguaje muy grande e importante.
+            p Lenguaje muy utilizado en el desarrollo #[em web], agregando interactividad al sitio, ofreciéndole animación y vida a los botones, juegos, animaciones y formularios. A nivel mundial existen muchos sitios #[em web] en los cuales el 95% de ellos contienen lenguaje JavaScript, por lo que se referencia como un lenguaje muy grande e importante.
             p.mb-0 Es considerado versátil y muy fácil de aprender, con muy buena flexibilidad.
        
           .col-lg-4.col-8
